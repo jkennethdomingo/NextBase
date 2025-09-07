@@ -14,7 +14,7 @@
 This project was **initially created with**:
 
 ```bash
-npm create next-app --example with-supabase with-supabase-app
+npx create-next-app -e with-supabase
 ````
 
 Which provides:
