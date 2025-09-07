@@ -2,6 +2,10 @@ import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import "./globals.css";
+import ServiceWorkerRegister from '@/components/pwa/sw-register'
+import PwaInstallPrompt from '@/components/pwa/install-prompt'
+import OfflineIndicator from '@/components/pwa/offline-indicator'
+import OfflineRedirect from '@/components/pwa/offline-redirect'
 
 const defaultUrl = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
@@ -41,9 +45,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <link rel="manifest" href="/manifest.webmanifest" />
-      </head>
       <body className={`${geistSans.className} antialiased`}>
         <ThemeProvider
           attribute="class"
@@ -51,8 +52,12 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <OfflineIndicator />
           {children}
         </ThemeProvider>
+        <ServiceWorkerRegister />
+        <PwaInstallPrompt />
+        <OfflineRedirect />
       </body>
     </html>
   );
