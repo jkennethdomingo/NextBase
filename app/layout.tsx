@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description: "A modern Next.js 15 boilerplate with built-in Supabase integration and Progressive Web App (PWA) support — perfect for kickstarting scalable, full-stack web applications.",
   generator: 'Next.js',
   manifest: '/manifest.webmanifest',
-  keywords: ['stem', 'atlas', 'nextjs', 'supabase', 'pwa'],
+  keywords: ['nextjs', 'supabase', 'pwa'],
   authors: [
     { name: 'John Kenneth Nicko M. Domingo' },
   ],
