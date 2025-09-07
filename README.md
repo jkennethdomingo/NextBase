@@ -1,8 +1,3 @@
-Got it 👍 I’ll clean this up into a **proper `README.md`** format: headings, lists, and code blocks.
-
-Here’s your ready-to-paste version:
-
-````markdown
 <a href="https://demo-nextjs-with-supabase.vercel.app/">
   <img alt="NextBase - A Next.js 15 + Supabase + PWA Starter Kit" src="https://demo-nextjs-with-supabase.vercel.app/opengraph-image.png">
   <h1 align="center">NextBase</h1>
@@ -72,4 +67,3 @@ On top of the Supabase starter, **NextBase** adds full **Progressive Web App (PW
 
 The app should now run on [http://localhost:3000](http://localhost:3000).
 
-```
